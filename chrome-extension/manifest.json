@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Songsterr Sync",
+  "version": "1.0",
+  "description": "Sync Songsterr playback across band members",
+  "permissions": [
+    "scripting",
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.songsterr.com/*",
+    "http://10.0.0.98:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.songsterr.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["*"],
+      "matches": ["http://10.0.0.98:3000/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; connect-src 'self' ws://10.0.0.98:8080 http://10.0.0.98:3000"
+  }
+}
+
+
+
+
+

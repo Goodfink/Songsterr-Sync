@@ -11,7 +11,7 @@
   ],
   "host_permissions": [
     "https://www.songsterr.com/*",
-    "http://10.0.0.98:3000/*"
+    "http://<YOUR_SERVER_IP>:3000/*"
   ],
   "background": {
     "service_worker": "background.js"
@@ -25,14 +25,14 @@
   "web_accessible_resources": [
     {
       "resources": ["*"],
-      "matches": ["http://10.0.0.98:3000/*"]
+      "matches": ["http://<YOUR_SERVER_IP>:3000/*"]
     }
   ],
   "action": {
     "default_popup": "popup.html"
   },
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; connect-src 'self' ws://10.0.0.98:8080 http://10.0.0.98:3000"
+    "extension_pages": "script-src 'self'; connect-src 'self' ws://<YOUR_SERVER_IP>:8080 http://<YOUR_SERVER_IP>:3000"
   }
 }
 

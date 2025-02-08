@@ -32,7 +32,7 @@ npm install
 
 ### **3️⃣ Start the WebSocket Server**
 ```sh
-node server.js
+node backend/server.js
 ```
 This will:
 - Start the WebSocket server (`ws://<your-local-ip>:8080`)

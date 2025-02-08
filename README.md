@@ -46,7 +46,7 @@ This will:
 1. Open `chrome://extensions/`
 2. Enable **Developer Mode**
 3. Click **Load Unpacked**
-4. Select the `frontend/` folder
+4. Select the `chrome-extension/` folder
 
 ### **2️⃣ Configure the Extension**
 - Open the extension popup
@@ -80,13 +80,3 @@ The **frontend UI** displays:
 | WebSocket won't connect | Ensure the server is running (`node server.js`) |
 | Status shows Disconnected | Check that you entered the correct **server IP** in the extension |
 | Logs don’t appear | Refresh the frontend (`http://<your-local-ip>:3000`) |
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-Let me know if you want any modifications! 🚀

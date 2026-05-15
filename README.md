@@ -3,11 +3,11 @@ Here’s a README file for your **Songsterr-Sync** project:
 
 ---
 
-# 🎵 Songsterr Sync
+# Songsterr Sync
 
 **Songsterr Sync** is a Chrome extension and WebSocket server that allows band members to **synchronize Songsterr playback** across multiple devices on the same local network.
 
-## 🚀 Features
+## Features
 
 - **Sync playback** between multiple users
 - **WebSocket-based communication**
@@ -17,20 +17,20 @@ Here’s a README file for your **Songsterr-Sync** project:
 
 ---
 
-## 📌 Installation
+## Installation
 
-### **1️⃣ Clone the Repository**
+### ** Clone the Repository**
 ```sh
 git clone https://github.com/Goodfink/Songsterr-Sync.git
 cd Songsterr-Sync
 ```
 
-### **2️⃣ Install Dependencies**
+### ** Install Dependencies**
 ```sh
 npm install
 ```
 
-### **3️⃣ Start the WebSocket Server**
+### ** Start the WebSocket Server**
 ```sh
 node backend/server.js
 ```
@@ -40,15 +40,15 @@ This will:
 
 ---
 
-## 🖥️ Setting Up the Chrome Extension
+## Setting Up the Chrome Extension
 
-### **1️⃣ Load the Extension in Chrome**
+### ** Load the Extension in Chrome**
 1. Open `chrome://extensions/`
 2. Enable **Developer Mode**
 3. Click **Load Unpacked**
 4. Select the `chrome-extension/` folder
 
-### **2️⃣ Configure the Extension**
+### ** Configure the Extension**
 - Open the extension popup
 - Enter the **server IP** (found in the terminal after running `server.js`)
 - Click **Save**
@@ -56,7 +56,7 @@ This will:
 
 ---
 
-## 🎸 How to Use
+## How to Use
 
 ### **Starting Playback Sync**
 1. Open **Songsterr**
@@ -72,7 +72,7 @@ The **frontend UI** displays:
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### **Common Issues**
 | Issue | Solution |

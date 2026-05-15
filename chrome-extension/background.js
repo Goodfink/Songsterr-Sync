@@ -78,7 +78,7 @@ connectWebSocket();
 
 chrome.storage.onChanged.addListener((changes) => {
     if (changes.serverIP) {
-        console.log("🔄 IP changed, reconnecting...");
+        console.log("IP changed, reconnecting...");
         socket?.close();
         connectWebSocket();
     }
@@ -87,7 +87,7 @@ chrome.storage.onChanged.addListener((changes) => {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === "checkConnection") {
         const isConnected = socket && socket.readyState === WebSocket.OPEN;
-        console.log(`🔌 Checking connection: ${isConnected ? "Connected" : "Disconnected"}`);
+        console.log(`Checking connection: ${isConnected ? "Connected" : "Disconnected"}`);
         sendResponse({ connected: isConnected });
     }
     return true;
